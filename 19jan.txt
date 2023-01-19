@@ -1,0 +1,26 @@
+Describe higher order functions.
+
+Ans;- 
+In JavaScript, a higher-order function is a function that takes one or more functions as arguments, and/or returns a function as its result. Higher-order functions are often used in functional programming to abstract away common patterns, such as iterating over an array and applying a function to each element.
+
+function map(arr, fn) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        newArr.push(fn(arr[i]));
+    }
+    return newArr;
+}
+
+var numbers = [1, 2, 3, 4, 5];
+var squaredNumbers = map(numbers, function(x) { return x * x; });
+console.log(squaredNumbers); // [1, 4, 9, 16, 25]
+
+
+Q2. write use cases + any one code example for map, filter and reduce.
+
+Ans;-
+map function is useful when you need to transform an array of data into a new array with the same length but with different values. A common use case is when you need to convert an array of numbers into an array of strings, or vice versa. 
+
+filter function is useful when you need to filter an array based on certain criteria. A common use case is when you need to extract all the even numbers from an array of numbers
+
+
